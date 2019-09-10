@@ -8,18 +8,31 @@ public class Home {
 
 	@GetMapping("/")
 	public String getHome() {
-		return "Hello, Welcome to Spring-Security";
+		
+		
+		String returnString = "Hello, Welcome to Spring-Security "
+				+ "<br><br> <a href=\"visitor\">Visitor</a>"
+				+ "<br><br> <a href=\"employee\">Employee</a>";
+		return returnString;
 	}
 	
 	@GetMapping("/employee")
 	public String getEmployee() {
-		return "Hello Employee, Welcome to Spring-Security.";
+		
+		String returnString = "Hello Employee, Welcome to Spring-Security "
+				+ "<br><br> <a href=\"visitor\">Visitor</a>"
+				+ "<br><br> <a href=\"/\">Home</a>";
+		return returnString;
 	}
 	
 	
 	@GetMapping("/visitor")
 	public String getVisitors() {
-		return "Hello Visitor, Welcome to Spring-Security.";
+		
+		String returnString = "Hello Visitor, Welcome to Spring-Security "
+				+ "<br><br> <a href=\"employee\">Employee</a>"
+				+ "<br><br> <a href=\"/\">Home</a>";
+		return returnString;
 	}
 	
 }
