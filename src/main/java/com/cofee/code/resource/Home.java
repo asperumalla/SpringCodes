@@ -11,4 +11,15 @@ public class Home {
 		return "Hello, Welcome to Spring-Security";
 	}
 	
+	@GetMapping("/employee")
+	public String getEmployee() {
+		return "Hello Employee, Welcome to Spring-Security.";
+	}
+	
+	
+	@GetMapping("/visitor")
+	public String getVisitors() {
+		return "Hello Visitor, Welcome to Spring-Security.";
+	}
+	
 }

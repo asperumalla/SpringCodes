@@ -1,3 +1,6 @@
 *mvn*
 *target
 *HELP.md
+.classpath*
+.project*
+.settings*
